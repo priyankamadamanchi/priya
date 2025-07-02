@@ -1,0 +1,21 @@
+<script>
+    let a = 10;
+    let b = 20;
+    console.log(`Addition of ${a} & ${b} is ${a + b}`);
+    document.write(`Addition of ${a} & ${b} is ${a + b}`);
+    window.alert(`Addition of ${a} & ${b} is ${a + b}`);
+
+    // log(`Addition of ${a} & ${b} is ${a + b}`); // No
+    // write(`Addition of ${a} & ${b} is ${a + b}`); // No
+    alert(`Addition of ${a} & ${b} is ${a + b}`);  // yes
+    this.alert(`Addition of ${a} & ${b} is ${a + b}`);  // yes
+
+    // Note: while using window object methods, using window.function is not mandatory
+    // window.alert(); // valid
+    // alert(); // valid
+
+    console.log(this)
+
+    let variable = prompt("Your message here");
+    
+</script>
