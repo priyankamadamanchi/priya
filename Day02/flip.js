@@ -14,5 +14,6 @@ images.forEach(function(img) {
 
         // add highlight to the clicked image
         this.classList.add('highlighted');
+        //updated
     });
 });
