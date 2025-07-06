@@ -1,0 +1,22 @@
+<script>
+    class User {
+        firstName = 'Virat';
+        lastName = 'Kohli';
+
+        fullName1() {   // this = user
+            console.log(this.firstName, this.lastName); // this = how/where we call it
+            console.log('FullName1 : ', this);
+        }
+        fullName2 = () => { // this = user (static)
+            console.log(this.firstName, this.lastName);
+            console.log('FullName2 : ', this)
+        }
+    }
+    let userObj = new User();
+     userObj.fullName1(); // Virat Kohli
+     userObj.fullName2(); // Virat Kohli
+
+    //setTimeout(userObj.fullName1, 2000); // setTimeout-higherOrder , fullName1-callback
+    // setTimeout(userObj.fullName1.bind(userObj), 4000); // setTimeout-higherOrder , fullName1-callback
+    //setTimeout(userObj.fullName2, 6000); // 
+</script>

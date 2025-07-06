@@ -1,0 +1,16 @@
+<script>
+    let user = {
+        firstName: 'Virat',
+        lastName: 'Kohli',
+        fullName1: function () {    // this = how the function is called
+            console.log(this.firstName, this.lastName); // this = user
+            console.log('FullName1 : ', this)
+        },
+        fullName2: () => {      // this = where the function is written
+            console.log(this.firstName, this.lastName); // this = window 
+            console.log('FullName2 : ', this)
+        }
+    }
+    user.fullName1(); // Virat Kohli
+    user.fullName2(); // undefined undefined
+</script>
